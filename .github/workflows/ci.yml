@@ -18,7 +18,7 @@ jobs:
         with:
           repository: tradectl/rust-sdk
           path: rust-sdk
-          token: ${{ secrets.SDK_PAT }}
+          token: ${{ secrets.GH_PAT }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - run: cargo build
