@@ -14,12 +14,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          path: rust-sdk-demo
       - uses: actions/checkout@v4
         with:
           repository: tradectl/rust-sdk
-          path: ../rust-sdk
+          path: rust-sdk
           token: ${{ secrets.GH_PAT }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: rust-sdk-demo
       - run: cargo build
+        working-directory: rust-sdk-demo
       - run: cargo clippy -- -D warnings
+        working-directory: rust-sdk-demo
