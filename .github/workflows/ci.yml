@@ -18,7 +18,7 @@ jobs:
         with:
           repository: tradectl/rust-sdk
           path: rust-sdk
-          ssh-key: ${{ secrets.SDK_DEPLOY_KEY }}
+          token: ${{ secrets.GH_PAT }}
       - uses: dtolnay/rust-toolchain@stable
       - uses: Swatinem/rust-cache@v2
       - run: cargo build
