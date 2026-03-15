@@ -1,0 +1,25 @@
+{
+    "api": {
+        "provider": "Binance"
+    },
+    "monitor": {
+        "host": "0.0.0.0",
+        "port": 9100
+    },
+    "strats": [
+        {
+            "name": "demo01",
+            "type": "Demo",
+            "marketType": "LINEAR",
+            "isEmulator": true,
+            "pairs": [
+                "BTCUSDT"
+            ],
+            "orderSize": 0.001,
+            "takeProfit": 0.015,
+            "stopLoss": 0.010,
+            "cooldownSecs": 10,
+            "warmupTicks": 50
+        }
+    ]
+}
