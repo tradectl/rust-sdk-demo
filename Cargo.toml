@@ -1,6 +1,6 @@
 [package]
 name = "tradectl-demo"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
 description = "Paper trading demo — connects to Binance WS, runs a simple TP/SL strategy, broadcasts to monitor"
 
