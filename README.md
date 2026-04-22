@@ -13,7 +13,7 @@ cargo run                              # uses demo-config.json
 cargo run -- my-config.json            # custom config
 ```
 
-Open [http://localhost:3002](http://localhost:3002) to see the live chart with entry, TP, and SL price lines.
+Open `http://localhost:9200/monitor` in [tradectl-lab](../lab/) to see the live chart with entry, TP, and SL price lines.
 
 ## Configuration
 
